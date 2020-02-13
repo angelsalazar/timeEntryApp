@@ -1,0 +1,93 @@
+.EntryWizard {
+  border-radius: .25rem;
+  min-width: 400px;
+  position: relative;
+  padding: 1rem;
+  background: var(--secundary-bg);
+}
+
+.EntryWizard__Compound-Field {
+  display: flex;
+  justify-content: space-between;
+}
+
+.EntryWizard__Compound-Field .Field {
+  width: 6rem;
+}
+
+.EntryWizard__Compound-Field .Combobox {
+  margin-right: 1rem;
+  flex: 1;
+}
+
+.EntryWizard__Header,
+.EntryWizard__Compound-Field,
+.EntryWizard__Field {
+  margin-bottom: 1rem;
+}
+
+.EntryWizard__Close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 2rem;
+  width: 2rem;
+  padding: 0;
+  outline: none;
+  border-radius: .25rem;
+  transform: translate(-.5rem, .5rem);
+  transition: transform .2s ease-in-out;
+  background: transparent;
+  border: none;
+}
+
+.EntryWizard__Close:hover {
+  background: #edf2f7;
+}
+
+.EntryWizard__Close:active {
+  transform: translate(-.5rem, .5rem) scale(0.8);
+}
+
+.EntryWizard__Close_Icon {
+  fill: currentColor;
+}
+
+.EntryWizard__Actions {
+    display: flex;
+}
+
+.EntryWizard__Secundary {
+  margin-left: auto;
+  margin-right: 1rem;
+}
+
+
+.App__Modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.App_Modal__Overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.ReactModal__Overlay {
+    opacity: 0;
+    transition: opacity .2s ease-in-out;
+}
+
+.ReactModal__Overlay--after-open{
+    opacity: 1;
+}
+
+.ReactModal__Overlay--before-close{
+    opacity: 0;
+}

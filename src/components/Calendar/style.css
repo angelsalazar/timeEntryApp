@@ -1,0 +1,57 @@
+.Calendar {
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  background: var(--secundary-bg);
+  width: calc((2.5rem * 7) + 2rem);
+  padding: 1rem;
+  border-radius: .5rem;
+  margin-bottom: 1rem;
+}
+
+.Calendar__Controls,
+.Calendar__Header,
+.Calendar__Content {
+  display: flex;
+}
+
+.Calendar__Title {
+  flex: 1;
+}
+
+.Calendar__Header {
+  font-size: .8rem;
+}
+
+.Calendar__Controls {
+  padding: 0 .5rem;
+  height: 2rem;
+  align-items: center;
+}
+
+.Calendar__Header,
+.Calendar__Content {
+  flex-wrap: wrap;
+}
+
+
+.Calendar__Navigation {
+  padding: 0;
+  height: 1.5rem;
+  width: 1.5rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.Calendar__Navigation-previous {
+  border-top-left-radius: .25rem;
+  border-bottom-left-radius: .25rem;
+}
+
+.Calendar__Navigation-next {
+  border-top-right-radius: .25rem;
+  border-bottom-right-radius: .25rem;
+}
+
+.Calendar__Navigation:hover {
+  background: #EDF2F7;
+}

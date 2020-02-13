@@ -1,0 +1,33 @@
+.Cell {
+  height: 2.5rem;
+  width: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #2D3748;
+  border-radius: .5rem;
+  cursor: pointer;
+}
+
+.Cell-current {
+  background: #EDF2F7;
+}
+
+.Cell:not(.Cell-disabled):hover {
+  background: #F6F7FB;
+}
+
+.Cell.Cell-selected:hover {
+  background: #5A67D8;
+}
+
+
+.Cell-selected {
+  background: var(--primary-bg);
+  color: var(--primary-text);
+}
+
+.Cell-disabled {
+  color: #79828E;
+  cursor: default;
+}

@@ -1,0 +1,97 @@
+.TimeEntry {
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  border-radius: .5rem;
+  margin-bottom: 1rem;
+  background: var(--secundary-bg);
+}
+
+.TimeEntry__Title {
+  border-radius: .25rem;
+  display: inline-block;
+  padding: .25rem .5rem;
+  margin-bottom: .5rem;
+}
+
+.TimeEntry__Title-project {
+  background: var(--project-bg);
+  color: var(--project-text);
+}
+
+.TimeEntry__Title-overhead {
+  background: var(--overhead-bg);
+  color: var(--overhead-text);
+}
+
+.TimeEntry__Body {
+  position: relative;
+  padding: 1rem 1rem .5rem 1rem;
+}
+
+.TimeEntry__Duration {
+  font-size: .8rem;
+  position: absolute;
+  display: inline-flex;
+  top: 0;
+  right: 0;
+  transform: translate(-50%, 100%);
+}
+
+.TimeEntry__Duration__Icon {
+  margin-right: .1rem;
+  height: 1rem;
+  width: 1rem;
+}
+
+.TimeEntry__Footer {
+  padding: 0 1rem;
+  border-top: 1.5px solid #E2E8F0;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.TimeEntry__Action {
+  font-size: .8rem;
+  display: inline-flex;
+  align-items: center;
+  background-color: #edf2f7;
+  color: #2d3748;
+  height: 1.5rem;
+  border-radius: .25rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transform-origin: center center;
+  transition: transform .2s ease-in-out;
+}
+
+.TimeEntry__Action:active {
+  transform: scale(0.9);
+}
+
+.TimeEntry__Action:hover {
+  background-color: #cbd5e0;
+}
+
+.TimeEntry__Action__Icon {
+  fill: currentColor;
+  height: 1rem;
+  width: 1rem;
+  margin-right: .25rem;
+}
+
+.TimeEntry__Action-delete {
+  margin-left: 1rem;
+  background-color: #fed7d7;
+  color: #9b2c2c;
+}
+
+.TimeEntry__Action.TimeEntry__Action-delete:hover {
+  background-color: #feb2b2;
+}
+
+.TimeEntry__Timespan {
+  margin-left: auto;
+  font-size: .85rem;
+  color: #4A5568;
+}

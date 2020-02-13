@@ -1,0 +1,34 @@
+.Textarea {
+  position: relative;
+}
+
+.Textarea__Label {
+  color: var(--input-idle);
+  position: absolute;
+  top: 0;
+  left: .75rem;
+  font-size: 1rem;
+  pointer-events: none;
+  transform: translateY(.1rem) scale(0.75);
+  transform-origin: left top;
+}
+
+.Textarea__Input {
+  height: 5rem;
+  padding: 13px .75rem 1px;
+  font-size: 1rem;
+  resize: vertical;
+  width: 100%;
+  outline: none;
+  border: 2px solid var(--input-idle);
+  border-radius: .25rem;
+  letter-spacing: .009375em;
+}
+
+.Textarea-focused > .Textarea__Input {
+  border-color: var(--input-focused);
+}
+
+.Textarea-focused > .Textarea__Label {
+  color: var(--input-focused);
+}

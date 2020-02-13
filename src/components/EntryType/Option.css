@@ -1,0 +1,63 @@
+.Option {
+  position: relative;
+  display: block;
+  padding-left: 1.5rem;
+  margin-bottom: .5rem;
+  cursor: pointer;
+  font-size: 1rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.Option__Trigger {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.Option__Checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1rem;
+  width: 1rem;
+  background-color: var(--input-option-idle);
+  border-radius: 100%;
+}
+
+/* On mouse-over, add a grey background color */
+.Option:hover .Option__Trigger ~ .Option__Checkmark {
+  background-color: var(--input-option-hover);
+}
+
+/* When the checkbox is checked, add a blue background */
+.Option .Option__Trigger:checked ~ .Option__Checkmark {
+  background-color: var(--input-focused);
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.Option__Checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.Option .Option__Trigger:checked ~ .Option__Checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.Option .Option__Checkmark:after {
+  height: .4rem;
+  width: .4rem;
+  top: 50%;
+  left: 50%;
+  background: var(--secundary-bg);
+  border-radius: 100%;
+  transform: translate(-50%, -50%);
+}

@@ -1,0 +1,21 @@
+.FloatingButton {
+  bottom: 1rem;
+  right: 1rem;
+  outline: none;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+  position: fixed;
+  border: none;
+  border-radius: 100%;
+  background: var(--primary-bg);
+  fill: var(--primary-text);
+  height: 3.5rem;
+  width: 3.5rem;
+  transform-origin: center center;
+  transition: transform .2s ease-in-out;
+}
+
+
+.FloatingButton:active {
+  transform: scale(0.9);
+}

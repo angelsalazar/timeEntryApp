@@ -1,0 +1,39 @@
+.Field {
+  position: relative;
+  height: 2.5rem;
+  border: 2px solid var(--input-idle);
+  border-radius: .25rem;
+}
+
+.Field__Label {
+  color: var(--input-idle);
+  position: absolute;
+  top: 0;
+  left: .75rem;
+  font-size: 1rem;
+  pointer-events: none;
+  transform: scale(0.75);
+  transform-origin: left top;
+}
+
+.Field__Input {
+  outline: none;
+  font-size: 1rem;
+  width: 100%;
+  height: 100%;
+  border: none;
+  padding: 13px .75rem 1px;
+  text-align: left;
+  background: transparent;
+  line-height: 1.75rem;
+  letter-spacing: .009375em;
+}
+
+.Field-focused {
+  border-color: var(--input-focused);
+}
+
+
+.Field-focused > .Field__Label {
+  color: var(--input-focused);
+}
